@@ -1,52 +1,65 @@
-* {
-	margin: 0;
-	padding: 0;
-	color: #232b2b;
-}
-ul {
-	list-style: none;
-}
 body {
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-image: url(../img/fish.png);
 }
-.container {
+
+header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	background-color: skyblue;
+}
+
+h1 {
+	font-size: 22px;
+	margin-left: 30px; 
+}
+
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 40px;
-	width: 40%;
-}
-h1 {
-	text-align: center;
-}
-form {
 	width: 100%;
-	height: 36px;
+	height: 100%;
+}
+
+.container {
+	width: 500px;
+	height: 100%;
+}
+
+form {
+	width: 353px;
+	height: 153px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 30px auto 20px;
+	background-image: url(../img/cloud.png);
+	box-sizing: border-box;
 }
 input[type="text"] {
-	width: 75%;
-	padding: 3px 7px;
-	border: 1px solid #232b2b;
-	border-radius: 3px 0 0 3px;
+	width: 200px;
+	height: 35px;
+	border: none;
+	border-radius: 3px;
+	box-sizing: border-box;
 }
 #btn {
-	width: 25%;
-	padding: 5px;
-	background-color: #093d86;
-	color: white;
-	border: none;
-	border-radius: 0 3px 3px 0;
-	cursor: pointer;
+	color: #fff;
+	background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
 }
 
 .todo-list {
-	width: 100%;
-	border-radius: 3px;
+	width: 500px;
+	height: 677px;
+	background-image: url(../img/paper.png);
+	margin-bottom: 50px;
 }
 /* 追加されるリストアイテムのCSS */
 li {
