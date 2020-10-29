@@ -13,22 +13,22 @@ if (input_text != ''){
   li.textContent = input_text;
   console.log(li);
 
-  // let div_delete = document.createElement('div');
+  let div_delete = document.createElement('div');
 
-  // div_delete.classList.add('delete');
-  // div_delete.textContent = 'Delete';
-  // div_delete.addEventListener('click',function(){
-  //   let hantei = confirm('本当に削除しますか？');
-  //   if (hantei == true){
-  //         this.parentElement.remove();
-  //   }
-  // });
+  div_delete.classList.add('delete');
+  div_delete.textContent = 'Delete';
+  div_delete.addEventListener('click',function(){
+    let hantei = confirm('本当に削除しますか？');
+    if (hantei == true){
+          this.parentElement.remove();
+    }
+  });
 
 
-  // li.appendChild(div_delete);
+  li.appendChild(div_delete);
   todo_list.appendChild(li);
 
-  // document.querySelector('#input').value = '';
+  document.querySelector('#input').value = '';
 }
 
 });
