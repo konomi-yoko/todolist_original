@@ -1,5 +1,3 @@
-// このファイルに処理を記述する
-
 let addBtn = document.querySelector('#btn');
 
 addBtn.addEventListener('click',function(){
