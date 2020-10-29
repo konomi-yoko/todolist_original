@@ -60,12 +60,13 @@ input[type="text"] {
 	height: 677px;
 	background-image: url(../img/paper.png);
 	margin-bottom: 50px;
+	padding: 30px 30px 30px 65px;
+	box-sizing: border-box;
 }
 /* 追加されるリストアイテムのCSS */
 li {
-	height: 30px;
-	border: 1px solid rgb(187, 187, 187);
-	border-bottom: none;
+	height: 25px;
+	border-bottom: 1px solid;
 	padding: 3px 11px;
 	display: flex;
 	align-items: center;
@@ -73,9 +74,7 @@ li {
 	justify-content: space-between;
 }
 /* 最後のli要素のみ、border-bottomがある */
-li:last-child {
-	border-bottom: 1px solid rgb(187, 187, 187);
-}
+
 /* 追加されるリストアイテムのDeleteボタン */
 .delete {
 	font-size: 12px;
