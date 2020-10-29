@@ -13,11 +13,11 @@ if (input_text != ''){
   li.textContent = input_text;
   console.log(li);
 
-  let div_delete = document.createElement('div');
+  let span_delete = document.createElement('span');
 
-  div_delete.classList.add('delete');
-  div_delete.textContent = 'Delete';
-  div_delete.addEventListener('click',function(){
+  span_delete.classList.add('delete');
+  // span_delete.textContent = 'Delete';
+  span_delete.addEventListener('click',function(){
     let hantei = confirm('本当に削除しますか？');
     if (hantei == true){
           this.parentElement.remove();
@@ -25,7 +25,7 @@ if (input_text != ''){
   });
 
 
-  li.appendChild(div_delete);
+  li.appendChild(span_delete);
   todo_list.appendChild(li);
 
   document.querySelector('#input').value = '';
