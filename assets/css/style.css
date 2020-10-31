@@ -2,14 +2,6 @@ body {
 	background-image: url(../img/fish.png);
 }
 
-header {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 60px;
-	background-color: skyblue;
-}
-
 h1 {
 	font-size: 22px;
 	margin-left: 30px; 
@@ -19,41 +11,61 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
+	width: 1126px;
 	height: 100%;
+	margin: 0 auto;
+	background-image: url(../img/freenote.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+
 }
 
 .container {
 	width: 500px;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 form {
-	width: 353px;
-	height: 153px;
+	width: 361px;
+	height: 237px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	margin: 30px auto 20px;
+	margin: 26px 0 20px;
+	padding-top: 102px;
 	background-image: url(../img/cloud.png);
 	box-sizing: border-box;
 }
+
+.form_input {
+	width: 235px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 input[type="text"] {
-	width: 200px;
-	height: 35px;
+	width: 190px;
+	height: 36px;
 	border: none;
 	border-radius: 3px;
 	box-sizing: border-box;
 }
 #btn {
+	margin: 0px;
+	padding: 0px;
 	color: #fff;
 	background-color: Transparent;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
-  overflow: hidden;
+  /*overflow: hidden;*/
   outline:none;
 }
+
 
 .todo-list {
 	width: 500px;
@@ -82,8 +94,3 @@ li {
 	cursor: pointer;
 }
 
-.delete::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f1f8";
-}
